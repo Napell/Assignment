@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Page Title</title>
+    
+    <script  type="text/javascript">
+    var b;
+    function factorial(b){
+         var fact=6;
+       do{
+           fact=fact*(b-1)
+           b = b - 1;
+        } while(b>1)
+       return fact;
+        
+    }
+
+    function addup(m){
+        var set=[1,2,3,4,5,6,7,8,9]
+        var a,c=0;
+        for (a=0;a<m;a++){
+            c=c+ set[a];
+        }
+        return c;
+    }
+    function fibonacci(){
+        var result=0;
+        var base =1;
+
+        for(var i=0;i<=6;i++){
+        result=result+base;
+        base++;
+        }
+        return result;
+    }
+    document.writeln(factorial(6)+"/n");
+    document.writeln(addup(5));
+    document.write("</br>"+fibonacci());
+
+    var emp=class{
+        constructor(id, name){
+            this.id=id;
+            this.name=name;
+        }
+        detail(){
+            document.writeln("</br>"+this.id);
+
+        }
+    }
+    var e3=new emp('40','Pella')
+    e3.detail();
+    var Abena=new Object();
+    Abena.school="KNUST";
+    Abena.id= 4;
+    document.write(Abena.school);
+
+    
+    
+    </script>
+</head>
+<body>
+    
+    
+    
+</body>
+</html>
